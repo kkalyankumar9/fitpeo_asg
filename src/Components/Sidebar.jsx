@@ -9,7 +9,7 @@ const Sidebar = () => {
     <Box  color={"white"} position={"sticky"} zIndex="0" >
 
     
-    <Box bgColor={"#050348"} p={4}  >
+    <Box bgColor={"#050348"} p={5}  >
 <HStack >
         <Icon as={FaCog}   />
         <Heading size={"lg"}>Dashboard</Heading>
@@ -17,8 +17,8 @@ const Sidebar = () => {
     </Box>
     <Box>
       
-      <Box ml={"3px"}>
-        <HStack p={2} justifyContent={"space-between"}>
+      <Box ml={"3px"} p={4}>
+        <HStack p={2} justifyContent={"space-between"} _hover={{ bgColor: '#504D82',p:"8px",borderRadius:"10px"}}>
           <HStack>
           <Icon
             as={FaKey}
@@ -32,21 +32,21 @@ const Sidebar = () => {
           </HStack>
           < ChevronRightIcon ml={"10px"}/>
         </HStack>
-        <HStack p={2} justifyContent={"space-between"}>
+        <HStack p={2} justifyContent={"space-between"} _hover={{ bgColor: '#504D82',p:"8px",borderRadius:"10px"}}>
           <HStack>
           <Icon as={FaBox} boxSize={6} justifyContent={"space-between"}/>
           <Heading size={"sm"}>Products</Heading>
           </HStack>
           < ChevronRightIcon />
         </HStack>
-        <HStack p={2} justifyContent={"space-between"}>
+        <HStack p={2} justifyContent={"space-between"} _hover={{ bgColor: '#504D82',p:"8px",borderRadius:"10px"}}>
           <HStack>
           <Icon as={FaUser} boxSize={6}  />
           <Heading size={"sm"}>Customers</Heading>
           </HStack>
           < ChevronRightIcon />
         </HStack>
-        <HStack p={2} justifyContent={"space-between"}>
+        <HStack p={2} justifyContent={"space-between"} _hover={{ bgColor: '#504D82',p:"8px",borderRadius:"10px"}}>
           <HStack>
       
           <Icon as={FaDollarSign} boxSize={6}  />
@@ -55,14 +55,14 @@ const Sidebar = () => {
           
           < ChevronRightIcon />
         </HStack>
-        <HStack p={2} justifyContent={"space-between"}>
+        <HStack p={2} justifyContent={"space-between"} _hover={{ bgColor: '#504D82',p:"8px",borderRadius:"10px"}}>
           <HStack>
           <Icon as={FaBullhorn} boxSize={6}  />
           <Heading size={"sm"}>Promote</Heading>
           </HStack>
           < ChevronRightIcon />
         </HStack>
-        <HStack p={2} justifyContent={"space-between"}>
+        <HStack p={2} justifyContent={"space-between"} _hover={{ bgColor: '#504D82',p:"8px",borderRadius:"10px"}}>
           <HStack>
           <Icon as={FaQuestionCircle} boxSize={6}  />
           <Heading size={"sm"}>Help</Heading>
@@ -72,34 +72,35 @@ const Sidebar = () => {
       </Box>
     </Box>
     <Box
-  display="flex"
-  justifyContent="space-evenly"
-  alignItems="center"
-  bgColor="#504D82"
-  p={2}
-  w={["100%", "220px"]} // Responsive width
-  ml={["0", "10px"]} // Responsive margin-left
-  mt="200px"
-  borderRadius="10px"
->
-  <HStack>
-    <Image
-      src="https://avatars.githubusercontent.com/u/112814583?v=4"
-      alt="error"
-      w="35px"
-      borderRadius="50%"
-    />
-    <Box textAlign="left">
-      <Heading size="sm">Evano</Heading>
-      <Text fontSize="xs">Project Manager</Text>
+      display="flex"
+      justifyContent="space-evenly"
+      alignItems="center"
+      bgColor="#504D82"
+      p={2}
+      w={['100%', '220px']} // Responsive width
+      ml={['0', '10px']} // Responsive margin-left
+      mt={['120px', '180px']} // Responsive margin-top
+      borderRadius="10px"
+    >
+      <HStack>
+        <Image
+          src="https://avatars.githubusercontent.com/u/112814583?v=4"
+          alt="error"
+          w={['25px', '35px']} // Responsive image width
+          borderRadius="50%"
+        />
+        <Box textAlign="left">
+          <Heading size="sm">Evano</Heading>
+          <Text fontSize="xs">Project Manager</Text>
+        </Box>
+      </HStack>
+      <Box>
+        <ChevronDownIcon />
+      </Box>
     </Box>
-  </HStack>
-  <Box>
-    <ChevronDownIcon />
-  </Box>
 </Box>
 
-    </Box>
+ 
   )
 }
 

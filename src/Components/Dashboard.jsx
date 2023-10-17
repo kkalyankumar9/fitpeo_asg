@@ -17,8 +17,8 @@ const Dashboard = () => {
       <Box w={"18%"} bgColor={"#050348"} >
     <Sidebar/>
     </Box>
-    <Box w={"80%"} p={5}  bgColor={"gray.50"}> 
-        <Flex justify={"space-between"} p={2} mb={5}>
+    <Box w={"80%"} p={5}  bgColor={"gray.50"} margin={"auto"}> 
+        <Flex justify={"space-between"} p={2} mb={5} >
             <Box >
                 <Text>
                     Hello Shahrukh 👋,
@@ -30,8 +30,8 @@ const Dashboard = () => {
                 <input type="text" placeholder='Search' />
               
             </Box>
-        </Flex>
-        <Grid templateColumns={['1fr', '1fr 1fr', '1fr 1fr 1fr 1fr']} w={{ base: "100%", md: "80%",sm:"70%" }} gap={10} justifyContent={"space-between"}  >
+        </Flex >
+        <Grid  templateColumns={['1fr', '1fr 1fr', '1fr 1fr 1fr 1fr']} w={{ base: "100%", md: "80%",sm:"70%" }} gap={10} justifyContent={"space-between"}  alignItems={"center"} >
         <Box p={2} bgColor={"white"} 
            borderRadius={"5px"} display={"flex"}  justifyContent={"center"} alignItems={"center"} boxShadow=" rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px">
             <Box
