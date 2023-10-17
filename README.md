@@ -1,6 +1,9 @@
 # Tech Stack
 React.js, Chakra UI, Vercel
 
+# Deployed link
+https://fitpeo-asg.vercel.app/
+
 ![image](https://github.com/kkalyankumar9/fitpeo_asg/assets/112814583/e8e1d46b-e668-4a14-b8d9-4d0d9ac8a55c)
 
 
